@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Project 18</title>
+<style>
+  .body {
+    margin-left: 35%;
+    margin-top: 12%;
+    font-size: 50px;
+    font-family: Times New Roman;
+  }
+  #btn {
+    width: 600px;
+    font-size: 40px;
+    font-family: Times New Roman;
+  }
+  .blue {
+    color: blue;
+    font-weight: bold;
+  }
+</style>
+<script>
+  function changeColor() {
+    let items = document.getElementsByClassName("list");
+    for (let i = 0; i < items.length; i++) {
+      if (i % 2 === 1) {
+        items[i].classList.toggle('blue');
+      }
+    }
+  }
+</script>
+</head>
+<body class="body">
+    <ul id="list">
+      <li class="list">Acura</li>
+      <li class="list">Alfa Romeo</li>
+      <li class="list">Aston Martin</li>
+      <li class="list">Audi</li>
+      <li class="list">Bentley</li>
+      <li class="list">BMW</li>
+      <li class="list">Bugatti</li>
+      <li class="list">Buick</li>
+    </ul>
+    <button id="btn" onclick="changeColor()">Ubah Warna Elemen Gelap</button>
+</body>
+</html>
